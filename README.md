@@ -97,6 +97,11 @@
     width="60px"
     alt="SQLite">
     &nbsp;&nbsp;&nbsp;&nbsp;
+  <img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neo4j/neo4j-original-wordmark.svg"
+    width="60px"
+    alt="Neo4j">
+    &nbsp;&nbsp;&nbsp;&nbsp;
   
   <!-- Tools -->
   <h3>Tools</h3>
