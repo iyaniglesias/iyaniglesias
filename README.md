@@ -1,6 +1,6 @@
 # Bienvenido a mi Github <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="29px">
 <p align='center'>
-<img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&size=25&center=true&vCenter=true&width=433&height=75&lines=Soy+Iyán+Iglesias;Fullstack+Developer;Future+Software+Engineer;">
+<img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&size=25&center=true&vCenter=true&width=433&height=75&lines=Iyán+Iglesias+Ibaseta;Fullstack+Developer;Future+Software+Engineer;">
 </p>
 
  ## Skills <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width=32px>
@@ -34,6 +34,7 @@
     width="60px"
     alt="Typescript">
     &nbsp;&nbsp;&nbsp;&nbsp;
+  </br>
   <img
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
     width="60px"
@@ -48,6 +49,16 @@
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
     width="60px"
     alt="CSS">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  <img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original-wordmark.svg"
+    width="60px"
+    alt="Arduino">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  <img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg"
+    width="60px"
+    alt="PowerShell">
     &nbsp;&nbsp;&nbsp;&nbsp;
   
   <!-- Frameworks -->
@@ -113,6 +124,24 @@
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original-wordmark.svg"
     width="60px"
     alt="Eclipse">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+
+  <!-- System Software -->
+  <h3>System Software</h3>
+  <img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg"
+    width="60px"
+    alt="Windows">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  <img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/almalinux/almalinux-original-wordmark.svg"
+    width="60px"
+    alt="AlmaLinux">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  <img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original-wordmark.svg"
+    width="60px"
+    alt="Ubuntu">
     &nbsp;&nbsp;&nbsp;&nbsp;
   
 </div>
