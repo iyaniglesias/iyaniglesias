@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="320" viewBox="0 0 1100 320" role="img" aria-labelledby="title desc">
+  <title id="title">Iyán Iglesias</title>
+  <desc id="desc">Estudiante de Ingeniería Informática en la Universidad de Oviedo. Backend, sistemas y homelab.</desc>
+
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Ubuntu, Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", "DejaVu Sans Mono", monospace; }
+
+    @keyframes fade   { from { opacity: 0 } to { opacity: 1 } }
+    @keyframes fadeup { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
+    @keyframes blink  { 0% { opacity: 1 } 50% { opacity: 0 } }
+    @keyframes grow   { from { transform: scaleX(0) } to { transform: scaleX(1) } }
+    @keyframes type2  { from { transform: translateX(0) } to { transform: translateX(252px) } }
+    @keyframes type3  { from { transform: translateX(0) } to { transform: translateX(146px) } }
+
+    .in1 { animation: fadeup .7s .05s both ease-out; }
+    .in2 { animation: fadeup .7s .20s both ease-out; }
+    .in3 { animation: fadeup .7s .35s both ease-out; }
+    .in4 { animation: fadeup .7s .50s both ease-out; }
+
+
+    .p2 { animation: fade .01s .3s both; }
+    .c2 { animation: type2 1.5s .5s both steps(25); }
+    .o2 { animation: fade .3s 2.2s both; }
+    .p3 { animation: fade .01s 2.6s both; }
+    .c3 { animation: type3 .8s 2.8s both steps(14); }
+    .o3 { animation: fade .3s 3.8s both; }
+    .bar { transform-box: fill-box; transform-origin: left center; animation: grow 1.4s 5.3s both cubic-bezier(.2,.7,.2,1); }
+    .p4 { animation: fade .01s 4.3s both; }
+    .cursor { animation: fade .01s 4.3s both, blink 1.1s 4.5s infinite steps(1); }
+  </style>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <radialGradient id="glowPurple" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a371f7" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#a371f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#36bcf7" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#36bcf7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="nameFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f0f6fc"/>
+      <stop offset="1" stop-color="#cdb8ff"/>
+    </linearGradient>
+    <linearGradient id="barFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a371f7"/>
+      <stop offset="1" stop-color="#36bcf7"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a371f7" stop-opacity="0"/>
+      <stop offset=".3" stop-color="#a371f7"/>
+      <stop offset=".7" stop-color="#36bcf7"/>
+      <stop offset="1" stop-color="#36bcf7" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="card"><rect x="1" y="1" width="1098" height="318" rx="16"/></clipPath>
+    <clipPath id="termInner"><rect x="641" y="65" width="408" height="224"/></clipPath>
+  </defs>
+
+  <!-- Fondo -->
+  <g clip-path="url(#card)">
+    <rect width="1100" height="320" fill="url(#bg)"/>
+    <circle cx="845" cy="165" r="330" fill="url(#glowPurple)"/>
+    <circle cx="120" cy="40" r="260" fill="url(#glowCyan)"/>
+    <rect x="0" y="0" width="1100" height="3" fill="url(#accent)"/>
+
+  </g>
+  <rect x="1" y="1" width="1098" height="318" rx="16" fill="none" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Texto de presentación -->
+  <text class="mono in1" x="56" y="88" font-size="16" fill="#8b949e"><tspan fill="#a371f7">&gt;</tspan> hola, soy</text>
+  <text class="sans in2" x="54" y="140" font-size="46" font-weight="700" fill="url(#nameFill)" letter-spacing="-0.5">Iyán Iglesias</text>
+  <g class="sans in3" font-size="17" fill="#8b949e">
+    <text x="56" y="178">Estudiante de Ingeniería Informática · Universidad de Oviedo</text>
+    <text x="56" y="204">Gijón, Asturias</text>
+  </g>
+
+  <!-- Etiquetas -->
+  <g class="mono in4" font-size="14" text-anchor="middle">
+    <rect x="56" y="228" width="99" height="30" rx="15" fill="#f778ba" fill-opacity=".11" stroke="#f778ba" stroke-opacity=".55"/>
+    <text x="105.5" y="248" fill="#ffc1e0">frontend</text>
+    <rect x="165" y="228" width="91" height="30" rx="15" fill="#a371f7" fill-opacity=".11" stroke="#a371f7" stroke-opacity=".55"/>
+    <text x="210.5" y="248" fill="#d2bcff">backend</text>
+    <rect x="266" y="228" width="99" height="30" rx="15" fill="#36bcf7" fill-opacity=".11" stroke="#36bcf7" stroke-opacity=".55"/>
+    <text x="315.5" y="248" fill="#a5e3ff">sistemas</text>
+    <rect x="375" y="228" width="91" height="30" rx="15" fill="#39d353" fill-opacity=".11" stroke="#39d353" stroke-opacity=".55"/>
+    <text x="420.5" y="248" fill="#a8f0b4">homelab</text>
+    <rect x="476" y="228" width="91" height="30" rx="15" fill="#f0883e" fill-opacity=".11" stroke="#f0883e" stroke-opacity=".55"/>
+    <text x="521.5" y="248" fill="#ffc69c">arduino</text>
+  </g>
+
+  <!-- Terminal -->
+  <g>
+    <rect x="640" y="30" width="410" height="260" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+    <path d="M652 30 h386 a12 12 0 0 1 12 12 v22 h-410 v-22 a12 12 0 0 1 12 -12 z" fill="#161b22"/>
+    <line x1="640" y1="64" x2="1050" y2="64" stroke="#30363d"/>
+    <!-- Icono y título (estilo Windows Terminal) -->
+    <g fill="none" stroke="#8b949e" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="656" y="40" width="18" height="14" rx="2.5"/>
+      <path d="M660 44.5 L663 47 L660 49.5"/>
+      <path d="M665 50 H669"/>
+    </g>
+    <text class="mono" x="684" y="51.5" font-size="12.5" fill="#8b949e">karma@homelab: ~</text>
+    <!-- Minimizar, maximizar, cerrar -->
+    <g fill="none" stroke="#8b949e" stroke-width="1.2" stroke-linecap="round">
+      <path d="M930 47 H940"/>
+      <rect x="976" y="42" width="10" height="10" rx="1"/>
+      <path d="M1022 42 L1032 52 M1032 42 L1022 52"/>
+    </g>
+
+    <g class="mono" font-size="15" clip-path="url(#termInner)">
+      <!-- 2 -->
+      <text class="p2" x="664" y="114" fill="#e6edf3"><tspan fill="#3fb950">~ $</tspan> docker node ls -q | wc -l</text>
+      <rect class="c2" x="699" y="99" width="340" height="22" fill="#0d1117" transform="translate(252 0)"/>
+      <text class="o2" x="664" y="140" fill="#8b949e">3</text>
+
+      <!-- 3 -->
+      <text class="p3" x="664" y="182" fill="#e6edf3"><tspan fill="#3fb950">~ $</tspan> ls ~/proyectos</text>
+      <rect class="c3" x="699" y="167" width="340" height="22" fill="#0d1117" transform="translate(146 0)"/>
+      <text class="o3" x="664" y="208" fill="#58a6ff" font-weight="600" xml:space="preserve" style="white-space:pre">apps/   web/   homelab/   arduino/</text>
+
+      <!-- 4 -->
+      <text class="p4" x="664" y="250" fill="#3fb950">~ $</text>
+      <rect class="cursor" x="700" y="237" width="9" height="17" fill="#e6edf3"/>
+    </g>
+  </g>
+</svg>

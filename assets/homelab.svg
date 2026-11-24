@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430" role="img" aria-labelledby="t d">
+  <title id="t">Homelab: clúster Docker Swarm con tres Lenovo ThinkCentre M700 Tiny</title>
+  <desc id="d">Nodo 1 manager con Core i5; nodos 2 y 3 workers con Core i7-6700T y Debian. Servicios: servidores de juegos, Pi-hole y almacenamiento.</desc>
+  <style>
+    @keyframes flow { to { stroke-dashoffset: -32 } }
+    @keyframes led  { 0%, 100% { opacity: 1 } 50% { opacity: .35 } }
+    .flow { animation: flow 1.6s linear infinite; }
+    .led  { animation: led 2.4s ease-in-out infinite; }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#a371f7" stop-opacity=".22"/><stop offset="1" stop-color="#a371f7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a371f7" stop-opacity="0"/><stop offset=".3" stop-color="#a371f7"/>
+      <stop offset=".7" stop-color="#36bcf7"/><stop offset="1" stop-color="#36bcf7" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="card"><rect x="1" y="1" width="1098" height="428" rx="16"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1100" height="430" fill="url(#bg)"/>
+    <circle cx="550" cy="120" r="320" fill="url(#glow)"/>
+    <rect width="1100" height="3" fill="url(#accent)"/>
+  </g>
+  <rect x="1" y="1" width="1098" height="428" rx="16" fill="none" stroke="#30363d" stroke-width="1.5"/>
+
+  <text x="40" y="44" font-family="ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;, &quot;DejaVu Sans Mono&quot;, monospace" font-size="14" fill="#8b949e"><tspan fill="#a371f7">●</tspan>  docker swarm · 3 nodos</text>
+
+  <!-- Conexiones -->
+  <g fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M550 178 V206 M265 206 H835 M265 206 V236 M835 206 V236" stroke="#30363d"/>
+    <path class="flow" d="M550 178 V206 H265 V236" stroke="#a371f7" stroke-opacity=".8" stroke-dasharray="6 10"/>
+    <path class="flow" d="M550 178 V206 H835 V236" stroke="#36bcf7" stroke-opacity=".8" stroke-dasharray="6 10"/>
+  </g>
+
+  
+  <g>
+    <rect x="380" y="60" width="340" height="118" rx="12" fill="#0d1117" stroke="#a371f7" stroke-opacity=".55" stroke-width="1.5"/>
+    
+    <g transform="translate(402 82)">
+      <rect width="56" height="20" rx="4" fill="#161b22" stroke="#8b949e" stroke-opacity=".7" stroke-width="1.4"/>
+      <path d="M8 6 V14 M12 6 V14 M16 6 V14" stroke="#8b949e" stroke-opacity=".6" stroke-width="1.3" stroke-linecap="round"/>
+      <circle class="led" cx="46" cy="10" r="2.6" fill="#a371f7" style="animation-delay:0s"/>
+    </g>
+    <text x="472" y="98" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Noto Sans&quot;, Ubuntu, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">Nodo 1 · manager</text>
+    <text x="402" y="136" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Noto Sans&quot;, Ubuntu, Helvetica, Arial, sans-serif" font-size="15" fill="#c9d1d9">Lenovo ThinkCentre M700 Tiny</text>
+    <text x="402" y="160" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Noto Sans&quot;, Ubuntu, Helvetica, Arial, sans-serif" font-size="15" fill="#8b949e">Intel Core i5 · Linux con escritorio</text>
+  </g>
+  
+  <g>
+    <rect x="110" y="236" width="310" height="118" rx="12" fill="#0d1117" stroke="#36bcf7" stroke-opacity=".55" stroke-width="1.5"/>
+    
+    <g transform="translate(132 258)">
+      <rect width="56" height="20" rx="4" fill="#161b22" stroke="#8b949e" stroke-opacity=".7" stroke-width="1.4"/>
+      <path d="M8 6 V14 M12 6 V14 M16 6 V14" stroke="#8b949e" stroke-opacity=".6" stroke-width="1.3" stroke-linecap="round"/>
+      <circle class="led" cx="46" cy="10" r="2.6" fill="#36bcf7" style="animation-delay:-0.8s"/>
+    </g>
+    <text x="202" y="274" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Noto Sans&quot;, Ubuntu, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">Nodo 2 · worker</text>
+    <text x="132" y="312" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Noto Sans&quot;, Ubuntu, Helvetica, Arial, sans-serif" font-size="15" fill="#c9d1d9">Lenovo ThinkCentre M700 Tiny</text>
+    <text x="132" y="336" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Noto Sans&quot;, Ubuntu, Helvetica, Arial, sans-serif" font-size="15" fill="#8b949e">Intel Core i7-6700T · Debian</text>
+  </g>
+  
+  <g>
+    <rect x="680" y="236" width="310" height="118" rx="12" fill="#0d1117" stroke="#36bcf7" stroke-opacity=".55" stroke-width="1.5"/>
+    
+    <g transform="translate(702 258)">
+      <rect width="56" height="20" rx="4" fill="#161b22" stroke="#8b949e" stroke-opacity=".7" stroke-width="1.4"/>
+      <path d="M8 6 V14 M12 6 V14 M16 6 V14" stroke="#8b949e" stroke-opacity=".6" stroke-width="1.3" stroke-linecap="round"/>
+      <circle class="led" cx="46" cy="10" r="2.6" fill="#36bcf7" style="animation-delay:-1.6s"/>
+    </g>
+    <text x="772" y="274" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Noto Sans&quot;, Ubuntu, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#e6edf3">Nodo 3 · worker</text>
+    <text x="702" y="312" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Noto Sans&quot;, Ubuntu, Helvetica, Arial, sans-serif" font-size="15" fill="#c9d1d9">Lenovo ThinkCentre M700 Tiny</text>
+    <text x="702" y="336" font-family="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Noto Sans&quot;, Ubuntu, Helvetica, Arial, sans-serif" font-size="15" fill="#8b949e">Intel Core i7-6700T · Debian</text>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;, &quot;DejaVu Sans Mono&quot;, monospace" font-size="13" text-anchor="middle">
+    <rect x="362.5" y="372" width="125" height="30" rx="15" fill="#39d353" fill-opacity=".11" stroke="#39d353" stroke-opacity=".55"/>
+    <text x="425" y="392" fill="#a8f0b4">Game servers</text>
+    <rect x="499.5" y="372" width="85" height="30" rx="15" fill="#f778ba" fill-opacity=".11" stroke="#f778ba" stroke-opacity=".55"/>
+    <text x="542" y="392" fill="#ffc1e0">Pi-hole</text>
+    <rect x="596.5" y="372" width="141" height="30" rx="15" fill="#d29922" fill-opacity=".11" stroke="#d29922" stroke-opacity=".55"/>
+    <text x="667" y="392" fill="#f2cc60">Almacenamiento</text>
+  </g>
+</svg>
